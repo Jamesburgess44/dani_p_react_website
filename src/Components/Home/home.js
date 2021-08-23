@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./home.css";
 import ReactPlayer from "react-player";
 import backgroundVideo from "./backgroundVideo.mp4";
@@ -6,6 +6,8 @@ import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+import { Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -51,11 +53,12 @@ const Home = () => {
           color="#fff"
         >
           <Typography variant="h3" component="h1" className={classes.title}>
-            <div >Product Photographer Dani Paskevitch</div>
+            <div >Dani Paskevitch</div>
+            <div className="variant">Photographer</div>
           </Typography>
-          <Button color="primary" variant="contained">
+          <Nav.Link as={Link} to={"/galleries"}><Button color="primary" variant="contained" as={Link} to={"/galleries"}>
             Explore Work
-          </Button>
+          </Button></Nav.Link>
         </Box>
       </div>
     </section>
