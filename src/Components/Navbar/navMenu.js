@@ -11,6 +11,7 @@ import Contact from "../Contact/contact";
 import Home from "../Home/home";
 import Galleries from "../Galleries/galleries";
 import Services from "../Services/services";
+import Upload from "../Upload/upload";
 
 
 export default class NavMenu extends Component {
@@ -47,8 +48,11 @@ export default class NavMenu extends Component {
           <Route path="/contact">
             <Contact />
           </Route>
-          <Route path="/">
+          <Route path="/" exact>
             <Home />
+          </Route>
+          <Route path="/upload">
+            <Upload />
           </Route>
         </Switch>
       </div>
