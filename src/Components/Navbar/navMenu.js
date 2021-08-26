@@ -17,8 +17,7 @@ import Upload from "../Upload/upload";
 export default class NavMenu extends Component {
   render() {
     return (
-      <Router>
-      <div>
+      <Router >
         <Navbar bg="dark" variant={"dark"} expand="lg">
           <Container>
           <Navbar.Brand href="/">Dani Paskevitch</Navbar.Brand>
@@ -33,7 +32,6 @@ export default class NavMenu extends Component {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-      </div>
       <div>
         <Switch>
         <Route path="/services">

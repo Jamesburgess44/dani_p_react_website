@@ -5,10 +5,7 @@ import NavMenu from './Components/Navbar/navMenu';
 
 function App() {
   return (
-  <div className="App">
     <NavMenu />
-  </div>
-  
   );
 }
 
