@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
 import { toast, ToastContainer } from 'react-toastify';
 import AllPhotosTable from './../AllPhotosTable/allPhotosTable';
-//if (intPriceProductdata == NaN || intPriceProductData == 0){} ADD LOGIC HERE FOR ALERTING A USER THAT THEY NEED TO ENTER AN INTEGER
+
 const Upload = (props) => {
     let id;
     if(props.currentUser !== undefined) {
