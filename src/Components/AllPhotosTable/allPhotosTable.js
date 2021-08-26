@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Row, Card, Col, Button } from "react-bootstrap";
 import { Component } from "react";
 import axios from "axios";
+import { toast } from 'react-toastify';
 
 class AllPhotosTable extends Component {
   state = {
@@ -15,6 +16,20 @@ class AllPhotosTable extends Component {
     allPhotosTable: tempItem,
     });
   };
+
+  deletePhoto = async (picturesId) => {
+    await axios.delete(`https://localhost:44394/api/pictures/${picturesId}`).then(res => {
+      if(res.status === 200){
+        toast.success("Product was deleted successfully");
+      }
+    })
+    .catch(err => {
+      if(err){
+        toast.error("Product was unable to be deleted successfully");
+      }
+    })
+
+  }
 
   render() {
     console.log(this.state.allPhotosTable);
@@ -49,18 +64,19 @@ class AllPhotosTable extends Component {
 
               return (
                 <Card
+                    key={photo.picturesId}
                   className="customCard card-container border"
                   style={{ width: "25rem", margin: "1rem" }}
                 >
                   <Card.Img className="prodImg" variant="top" src={image.src} />
                   <Card.Body className="text-center">
                     <Card.Title className="fs-4">
-                      {photo.ShootName}
+                      {photo.shootName}   <Button onClick={this.deletePhoto(photo.picturesId)}>Delete Image</Button>
                     </Card.Title>
                     <hr className="titleSeperator"></hr>
 
                     <Card.Text className="fs-5">
-                      {photo.Category}
+                      {photo.category}
                     </Card.Text>
                     <div className="mb-2"></div>
                     <div className="d-flex justify-content-center"></div>

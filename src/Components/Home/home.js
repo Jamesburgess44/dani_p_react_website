@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <section className={classes.root}>
         <img src="/images/background.webp" 
-        height= "100%"
+        height= "flex"
         width= "100%"
         />
       <div className={classes.overlay}>
