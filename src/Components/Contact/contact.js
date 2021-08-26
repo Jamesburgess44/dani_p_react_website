@@ -5,6 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
+import EmailForm from "../EmailForm/emailForm";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -98,7 +99,8 @@ const Contact = () => {
           alignItems="center"
           color="#fff"
         >
-          <React.Fragment>
+          <EmailForm />
+          {/* <React.Fragment>
             <Container>
               <Row>
                 <Col lg={8}>
@@ -192,10 +194,15 @@ const Contact = () => {
                 <Col sm={4}></Col>
               </Row>
             </Container>
-          </React.Fragment>
-          <Typography variant="h3" component="h1" className={classes.title}>
-            <br></br>
-            <div>
+          </React.Fragment> */}
+            <div className="container"
+    style={{
+        marginTop:"50px",
+        width: '75%',
+    }}>
+      <div style={{
+        margin: "25px 85px 75px 100px"
+    }}>
               <h1>Contact Details</h1>
               <br></br>
               <h2>Email Address</h2>
@@ -203,8 +210,8 @@ const Contact = () => {
               <br></br>
               <h2>Phone Number</h2>
               <h2>(801)201-6799</h2>
+              </div>
             </div>
-          </Typography>
         </Box>
       </div>
     </section>
