@@ -2,6 +2,8 @@ import React from "react";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+import Gallery from "react-photo-gallery";
+import { HospitalityPhotos } from "./hospitalityPhotos";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,7 +28,6 @@ const useStyles = makeStyles((theme) => ({
 
 const Hospitality = () => {
   const classes = useStyles();
-
   return (
     <section className={classes.root}>
         <img src="/images/background.webp" 
@@ -34,6 +35,7 @@ const Hospitality = () => {
         width= "100%"
         />
       <div className={classes.overlay}>
+      <Gallery photos={HospitalityPhotos} direction={"column"} />
         <Box
           height="100%"
           display="flex"
