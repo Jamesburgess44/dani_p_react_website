@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Galleries = () => {
+const Product = () => {
   const classes = useStyles();
 
   return (
@@ -55,4 +55,4 @@ const Galleries = () => {
   );
 };
 
-export default Galleries;
+export default Product;

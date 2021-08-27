@@ -1,19 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import axios from "axios";
-import { toast, ToastContainer } from "react-toastify";
-import { Container, Row, Col, Button, Form } from "react-bootstrap";
-import EmailForm from "../EmailForm/emailForm";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
     height: "85%",
-    position: "relative",
-    "& video": {
-      objectFit: "cover",
+    position: "relative", "& video": {
+    objectFit: "cover",
     },
   },
   overlay: {
@@ -29,12 +24,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Contact = () => {
+const Branding = () => {
   const classes = useStyles();
 
   return (
     <section className={classes.root}>
-      <img src="/images/background.webp" height="100%" width="100%" />
+        <img src="/images/background.webp" 
+        height= "100%"
+        width= "100%"
+        />
       <div className={classes.overlay}>
         <Box
           height="100%"
@@ -44,28 +42,17 @@ const Contact = () => {
           alignItems="center"
           color="#fff"
         >
-          <EmailForm /> 
-            <div className="container"
-    style={{
-        marginTop:"50px",
-        width: '75%',
-    }}>
-      <div style={{
-        margin: "25px 85px 75px 100px"
-    }}>
-              <h1>Contact Details</h1>
+          <Typography variant="h3" component="h1" className={classes.title}>
               <br></br>
-              <h2>Email Address</h2>
-              <h2>danipaskevitch@gmail.com</h2>
               <br></br>
-              <h2>Phone Number</h2>
-              <h2>(801)201-6799</h2>
-              </div>
-            </div>
+              <br></br>
+              <br></br>
+            <div >There is where the photo galleries will go</div>
+          </Typography>
         </Box>
       </div>
     </section>
   );
 };
 
-export default Contact;
+export default Branding;

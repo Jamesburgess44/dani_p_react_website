@@ -9,9 +9,11 @@ import {
 import About from "../About/about";
 import Contact from "../Contact/contact";
 import Home from "../Home/home";
-import Galleries from "../Galleries/galleries";
+import Product from "../Galleries/product";
 import Services from "../Services/services";
 import Upload from "../Upload/upload";
+import Branding from "../Galleries/branding";
+import Hospitality from "../Galleries/hospitality";
 
 
 export default class NavMenu extends Component {
@@ -25,7 +27,9 @@ export default class NavMenu extends Component {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link as={Link} to={"/about"}>About</Nav.Link>
-                <Nav.Link as={Link} to={"/galleries"}>Galleries</Nav.Link>
+                <Nav.Link as={Link} to={"/product"}>Product</Nav.Link>
+                <Nav.Link as={Link} to={"/branding"}>Branding</Nav.Link>
+                <Nav.Link as={Link} to={"/hospitality"}>Hospitality</Nav.Link>
                 <Nav.Link as={Link} to={"/services"}>Services</Nav.Link>
                 <Nav.Link as={Link} to={"/contact"}>Contact</Nav.Link>
               </Nav>
@@ -40,8 +44,8 @@ export default class NavMenu extends Component {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/galleries">
-            <Galleries />
+          <Route path="/product">
+            <Product />
           </Route>
           <Route path="/contact">
             <Contact />
@@ -51,6 +55,12 @@ export default class NavMenu extends Component {
           </Route>
           <Route path="/upload">
             <Upload />
+          </Route>
+          <Route path="/branding">
+            <Branding />
+          </Route>
+          <Route path="/hospitality">
+            <Hospitality />
           </Route>
         </Switch>
       </div>
