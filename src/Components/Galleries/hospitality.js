@@ -18,7 +18,13 @@ function Hospitality() {
   };
 
   return (
-    <div >
+    <div style={{
+      backgroundImage: "url(/daniPBackground.jpg)",
+      minWidth: "100%",
+      minHeight: "100%",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+       }}>
       <Gallery photos={HospitalityPhotos} onClick={openLightbox} direction={"column"} />
       <ModalGateway>
         {viewerIsOpen ? (

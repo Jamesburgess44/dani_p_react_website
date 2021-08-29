@@ -2,7 +2,14 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div>
+    <div style={{
+      backgroundImage: "url(/daniPBackground.jpg)",
+      position: "fixed",
+      minWidth: "100%",
+      minHeight: "100%",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+       }}>
       <div variant="h3" component="h1">
         <br></br>
         <br></br>

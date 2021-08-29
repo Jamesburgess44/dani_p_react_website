@@ -38,6 +38,15 @@ export default function EmailForm() {
       <textarea name="message" rows="4" className="form-control"/>
       <input type="submit" value="Send"
       className="form-control btn btn-dark" />
+      <div>
+              <h1>Contact Details</h1>
+              <br></br>
+              <h2>Email Address</h2>
+              <h2>danipaskevitch@gmail.com</h2>
+              <br></br>
+              <h2>Phone Number</h2>
+              <h2>(801)201-6799</h2>
+              </div>
     </form>
     </div>
   );

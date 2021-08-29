@@ -5,14 +5,24 @@ export const BrandingPhotos = [
       height: 3
     },
     {
+      src: "https://pro2-bar-s3-cdn-cf2.myportfolio.com/0e2d807c-e193-4395-a0f4-ea7614a28838/d4e3d955-be38-44b5-b4ac-8e76b70fafd6_rw_600.jpg?h=aeda8e7a7da5d5c258c6641ade197312",
+      width: 3,
+      height: 3
+    },
+    {
       src: "https://pro2-bar-s3-cdn-cf3.myportfolio.com/0e2d807c-e193-4395-a0f4-ea7614a28838/e5ed8f31-6a85-43a2-80ec-56f374019aa7_rw_1920.jpg?h=446496f163e5cd5e694de6ad7db2d55c",
-      width: 1,
-      height: 1
+      width: 3,
+      height: 4
     },
     {
       src: "https://pro2-bar-s3-cdn-cf1.myportfolio.com/0e2d807c-e193-4395-a0f4-ea7614a28838/cf44d4ab-cf82-4b8d-98b7-f50ad491b691_rw_1920.jpg?h=8cb6c6f8a56a75034dac1b40820545b9",
       width: 3,
-      height: 4
+      height: 3
+    },
+    {
+      src: "https://pro2-bar-s3-cdn-cf2.myportfolio.com/0e2d807c-e193-4395-a0f4-ea7614a28838/d0fff85b-00bd-4367-9496-46a2393e85fe_rw_600.jpg?h=e69431b0811cfb13d3b6df5cca82b02a",
+      width: 3,
+      height: 3
     },
     {
       src: "https://pro2-bar-s3-cdn-cf6.myportfolio.com/0e2d807c-e193-4395-a0f4-ea7614a28838/7f97c03c-690d-4590-b55f-04a431714ed3_rw_1920.jpg?h=946f917be9d19d404d6023c4bbab648b",
@@ -31,8 +41,8 @@ export const BrandingPhotos = [
     },
     {
       src: "https://pro2-bar-s3-cdn-cf4.myportfolio.com/0e2d807c-e193-4395-a0f4-ea7614a28838/f4368537-ddd0-4875-8cae-978584a5491c_rw_1920.jpg?h=92bc075fabd8f02f687301369a05fcd5",
-      width: 4,
-      height: 3
+      width: 5,
+      height: 5
     },
     {
         src: "https://pro2-bar-s3-cdn-cf2.myportfolio.com/0e2d807c-e193-4395-a0f4-ea7614a28838/dd6235a9-554a-4115-9c19-20750141ea8d_rw_1920.jpg?h=c47e8bb817a3b3df78b2c49524706e06",
@@ -43,6 +53,11 @@ export const BrandingPhotos = [
         src: "https://pro2-bar-s3-cdn-cf.myportfolio.com/0e2d807c-e193-4395-a0f4-ea7614a28838/83ff351b-d137-4b3d-8477-290ef25ffceb_rw_1920.jpg?h=fcd35377ad92e34d9ac00e685e6a4832",
         width: 4,
         height: 3
+      },
+      {
+        src: "https://pro2-bar-s3-cdn-cf.myportfolio.com/0e2d807c-e193-4395-a0f4-ea7614a28838/1a908c73-ad80-4d1f-96db-71d1ba0fbbcd_rw_600.jpg?h=d0bfbfb40b1ecbd1430204cf9feb16d7",
+        width: 4,
+        height: 6
       }
   ];
   

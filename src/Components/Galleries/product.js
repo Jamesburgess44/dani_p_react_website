@@ -18,7 +18,13 @@ function Products() {
   };
 
   return (
-    <div>
+    <div style={{
+      backgroundImage: "url(/daniPBackground.jpg)",
+      minWidth: "100%",
+      minHeight: "100%",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+       }}>
       <Gallery photos={ProductPhotos} onClick={openLightbox} direction={"column"}/>
       <ModalGateway>
         {viewerIsOpen ? (

@@ -5,7 +5,14 @@ import HomeVideo from './../HomeVideo/homeVideo';
 const Home = () => {
 
   return (
-    <div>
+    <div style={{
+      backgroundImage: "url(/daniPBackground.jpg)",
+      position: "fixed",
+      minWidth: "100%",
+      minHeight: "100%",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+       }}>
           <Typography variant="h3" component="h1">
               <HomeVideo />
           </Typography>
