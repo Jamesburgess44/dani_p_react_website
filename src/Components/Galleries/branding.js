@@ -20,7 +20,7 @@ function Branding() {
   
     return (
       <div>
-        <Gallery photos={BrandingPhotos} onClick={openLightbox} />
+        <Gallery photos={BrandingPhotos} onClick={openLightbox} direction={"column"} />
         <ModalGateway>
           {viewerIsOpen ? (
             <Modal onClose={closeLightbox}>

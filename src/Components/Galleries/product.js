@@ -1,53 +1,41 @@
-import React from "react";
-import Box from "@material-ui/core/Box";
-import { makeStyles } from "@material-ui/core/styles";
+import React, { useState, useCallback } from "react";
 import { ProductPhotos } from "./productPhotos";
 import Gallery from "react-photo-gallery";
+import Carousel, { Modal, ModalGateway } from "react-images";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: "100%",
-    height: "85%",
-    position: "relative", "& video": {
-    objectFit: "cover",
-    },
-  },
-  overlay: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
-  },
-  title: {
-    paddingBottom: theme.spacing(4),
-  },
-}));
+function Products() {
+  const [currentImage, setCurrentImage] = useState(0);
+  const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-const Product = () => {
-  const classes = useStyles();
+  const openLightbox = useCallback((event, { photo, index }) => {
+    setCurrentImage(index);
+    setViewerIsOpen(true);
+  }, []);
+
+  const closeLightbox = () => {
+    setCurrentImage(0);
+    setViewerIsOpen(false);
+  };
 
   return (
-    <section className={classes.root}>
-        <img src="/images/background.webp" 
-        height= "100%"
-        width= "100%"
-        />
-      <div className={classes.overlay}>
-      <Gallery photos={ProductPhotos} direction={"column"} />
-        <Box
-          height="100%"
-          display="flex"
-          flexDirection="column"
-          justifyContent="top"
-          alignItems="center"
-          color="#fff"
-        >
-        </Box>
-      </div>
-    </section>
+    <div>
+      <Gallery photos={ProductPhotos} onClick={openLightbox} direction={"column"}/>
+      <ModalGateway>
+        {viewerIsOpen ? (
+          <Modal onClose={closeLightbox}>
+            <Carousel
+              currentIndex={currentImage}
+              views={ProductPhotos.map(x => ({
+                ...x,
+                srcset: x.srcSet,
+                caption: x.title
+              }))}
+            />
+          </Modal>
+        ) : null}
+      </ModalGateway>
+    </div>
   );
-};
+}
 
-export default Product;
+export default Products;
