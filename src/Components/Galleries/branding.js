@@ -2,6 +2,8 @@ import React from "react";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+import { BrandingPhotos } from "./brandingPhotos";
+import Gallery from "react-photo-gallery";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,6 +36,7 @@ const Branding = () => {
         width= "100%"
         />
       <div className={classes.overlay}>
+      <Gallery photos={BrandingPhotos} direction={"column"} />
         <Box
           height="100%"
           display="flex"

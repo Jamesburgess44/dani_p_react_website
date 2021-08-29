@@ -1,4 +1,4 @@
-export const HospitalityPhotos = [
+export const BrandingPhotos = [
     {
       src: "https://pro2-bar-s3-cdn-cf5.myportfolio.com/0e2d807c-e193-4395-a0f4-ea7614a28838/66e4e21f-d5a4-42c8-aff6-27f1932723dd_rw_1920.jpg?h=b732ca23076a0bfcf624b16264aaf20b",
       width: 4,

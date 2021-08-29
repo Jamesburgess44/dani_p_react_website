@@ -1,6 +1,5 @@
 import React from "react";
 import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Gallery from "react-photo-gallery";
 import { HospitalityPhotos } from "./hospitalityPhotos";
@@ -44,13 +43,6 @@ const Hospitality = () => {
           alignItems="center"
           color="#fff"
         >
-          <Typography variant="h3" component="h1" className={classes.title}>
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-            <div >There is where the photo galleries will go</div>
-          </Typography>
         </Box>
       </div>
     </section>
