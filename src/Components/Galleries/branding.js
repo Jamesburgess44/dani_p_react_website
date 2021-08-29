@@ -19,7 +19,7 @@ function Branding() {
     };
   
     return (
-      <div>
+      <div > 
         <Gallery photos={BrandingPhotos} onClick={openLightbox} direction={"column"} />
         <ModalGateway>
           {viewerIsOpen ? (

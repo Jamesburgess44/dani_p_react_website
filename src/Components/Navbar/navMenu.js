@@ -36,7 +36,7 @@ export default class NavMenu extends Component {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-      <div>
+        <div > 
         <Switch>
         <Route path="/services">
             <Services />
