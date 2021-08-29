@@ -39,6 +39,8 @@ export default function EmailForm() {
       <input type="submit" value="Send"
       className="form-control btn btn-dark" />
       <div>
+        <br></br>
+        <br></br>
               <h1>Contact Details</h1>
               <br></br>
               <h2>Email Address</h2>
