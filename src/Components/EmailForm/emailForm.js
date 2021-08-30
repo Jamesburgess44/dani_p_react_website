@@ -28,6 +28,8 @@ export default function EmailForm() {
     }}
     >
     <h1 className="title mb-3">Ask Dani a Question</h1>
+    <br></br>
+    <br></br>
     <h5 className="title">Name</h5>
       <input type="text" name="name" className="form-control" />
       <h5 className="title">Email</h5>

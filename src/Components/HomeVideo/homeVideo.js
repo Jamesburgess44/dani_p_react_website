@@ -56,7 +56,7 @@ const HomeVideo = () => {
             <div >Dani Paskevitch</div>
             <div className="variant">Photographer</div>
           </Typography>
-          <Nav.Link as={Link} to={"/galleries"}><Button color="primary" variant="contained" as={Link} to={"/galleries"}>
+          <Nav.Link as={Link} to={"/product"}><Button color="primary" variant="contained" as={Link} to={"/product"}>
             Explore Work
           </Button></Nav.Link>
         </Box>
