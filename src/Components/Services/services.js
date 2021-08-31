@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { Nav, Button } from "react-bootstrap";
 
 const Services = () => {
   return (
@@ -60,9 +61,9 @@ const Services = () => {
           <br></br>
           <h3>
             Want a custom quote? Contact me here:{" "}
-            <button  class="btn btn-dark" as={Link} to={"/contact"}>
-              Contact Me
-            </button>
+            <Nav.Link as={Link} to={"/contact"} ><button class="btn btn-dark" variant="contained">
+            Contact Me
+          </button></Nav.Link>
           </h3>
           <br></br>
           <br></br>
