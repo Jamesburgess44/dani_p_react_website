@@ -19,7 +19,7 @@ const Upload = (props) => {
     const [nameError, setNameError] = useState({})
     const [descriptionError, setDescriptionError] = useState({})
 
-    const sellProductFormValidation = () => {
+    const pictureFormValidation = () => {
         const nameError = {};
         const descriptionError = {};
         ;
@@ -64,7 +64,7 @@ const Upload = (props) => {
 
     const submitProduct = async () => {
         let productData = eachEntry
-        const isValid = sellProductFormValidation();
+        const isValid = pictureFormValidation();
         if(isValid){
             await axios.post("https://localhost:44394/api/pictures", productData).then(res => {
             if(res.data.length !== 0){

@@ -71,7 +71,7 @@ class AllPhotosTable extends Component {
                   <Card.Img className="prodImg" variant="top" src={image.src} />
                   <Card.Body className="text-center">
                     <Card.Title className="fs-4">
-                      {photo.shootName}   <Button onClick={this.deletePhoto(photo.picturesId)}>Delete Image</Button>
+                      {/* {photo.shootName}   <Button onClick={this.deletePhoto(photo.picturesId)}>Delete Image</Button> */}
                     </Card.Title>
                     <hr className="titleSeperator"></hr>
 
