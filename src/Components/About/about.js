@@ -1,6 +1,7 @@
 import React from "react";
-import { Button, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import MailerForm from "../../MailerForm/mailerForm";
+import { Nav, Button } from "react-bootstrap";
 
 const Contact = () => {
   return (
@@ -70,10 +71,13 @@ const Contact = () => {
           <br></br>
           <br></br>
           <br></br>
-          <h3>Want to chat about your brand? Contact me here: <Button as={Link} to={"/contact"} class="btn btn-dark" >Contact Me</Button>
-          </h3>
+          <h4>Want to chat about your brand? Contact me here:<Nav.Link as={Link} to={"/contact"} ><button class="btn btn-dark" variant="contained">
+            Contact Me
+          </button></Nav.Link>
+          </h4>
           <br></br>
           <br></br>
+          <MailerForm />
         </div>
       </div>
     </div>

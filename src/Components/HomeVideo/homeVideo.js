@@ -52,13 +52,23 @@ const HomeVideo = () => {
           alignItems="center"
           color="#fff"
         >
-          <Typography variant="h3" component="h1" className={classes.title}>
-            <div >Dani Paskevitch</div>
-            <div className="variant">Photographer</div>
-          </Typography>
-          <Nav.Link as={Link} to={"/product"}><Button color="primary" variant="contained" as={Link} to={"/product"}>
+          <div className="mt-2 mb-8">
+        <p style={{
+          fontSize: "8vw"
+        }}>Dani Paskevitch</p>
+        <p style={{
+          fontSize: "2vw"
+        }}>Product and Brand Photographer</p>
+        </div>
+        <br></br>
+    <Nav.Link as={Link} to={"/product"}><Button color="primary" variant="contained">
             Explore Work
           </Button></Nav.Link>
+          <br></br>
+          <br></br>
+          <p style={{
+          fontSize: "1vw"
+        }}>I work for brands to enhance their visual identity by creating converting content through creative strategy, styling, and design.</p>
         </Box>
       </div>
     </section>

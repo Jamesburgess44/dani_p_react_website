@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Services = () => {
@@ -61,9 +60,9 @@ const Services = () => {
           <br></br>
           <h3>
             Want a custom quote? Contact me here:{" "}
-            <Button as={Link} to={"/contact"} class="btn btn-dark">
+            <button  class="btn btn-dark" as={Link} to={"/contact"}>
               Contact Me
-            </Button>
+            </button>
           </h3>
           <br></br>
           <br></br>
